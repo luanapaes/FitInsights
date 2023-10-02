@@ -1,13 +1,14 @@
 let $btnLogin = document.getElementById('login');
-let $btnCadastro = document.getElementById('cadastro');
+let $btnCadastro   = document.getElementById('cadastro');
+let $btnSair = document.getElementById('btn-sair');
 
 $btnLogin.addEventListener('click', function(){
     window.location = 'signin.html';
 });
 
-$btnCadastro.addEventListener('click', function(){
-    window.location = 'signup.html';
-});
+function sair(){
+    window.location = 'signin.html';
+}
 
 //---------------------------------------------------------
 //deve estar no input para o usuário carregar seu dataframe
@@ -33,7 +34,6 @@ function handleFileUpload() {
 }
 
 //----GRÁFICOS---------------------------------------------
-
 // Cria o gráfico de área 1 e o exibe no elemento com ID "grafico1"
 var fig1 = px.area(df, x = 'months_as_member', facet_col = 'category',
     labels = { 'months_as_member': 'Meses como Membro', 'category': 'Categoria' },

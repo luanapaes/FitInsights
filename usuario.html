@@ -13,7 +13,9 @@
     <div class="container">
         <!--adicionar botão para esse ícone-->
         <div class="btn_off">
-            <i class="fas fa-power-off"></i>
+            <button class="button-off" onclick="sair()">
+                <i class="fas fa-power-off"></i>
+            </button>
         </div>
 
         <div class="main">
@@ -79,12 +81,23 @@
                 </div>
 
                 <div class="graficos">
-
+                    <div id="grafico1 grafico">
+                        <img src="files/graficos/grafico-de-barras.png" alt="">
+                    </div>
+                    <div id="grafico2 grafico">
+                        <img src="files/graficos/grafico-de-pizza.png" alt="">
+                    </div>
+                    <div id="grafico3 grafico">
+                        <img src="files/graficos/grafico-de-dispersao.png" alt="">
+                    </div>
+                    <div id="grafico4 grafico">
+                        <img src="files/graficos/grafico-de-linhas.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 </body>
