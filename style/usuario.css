@@ -47,7 +47,6 @@ body{
     font-size: 2.5em;
 }
 
-
 .main{
     display: flex;
     flex-direction: row;
@@ -79,6 +78,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-left: 10%;
 }
 
 .btn_off:hover, .icons_space i:hover{
@@ -151,15 +151,51 @@ body{
 }
 
 .graficos{
+    display: flex;
+    flex-direction: row;
     border-radius: 2%;
     margin-top: 2%;
-    height: 80%;
     width: 100%;
 }
 
  img{
     width: 100%;
-    height: 50%;
 }
 
+@media (max-width: 768px) {
+    .info_user{
+        background: #1d0268;
+        justify-content: start;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row p, .row i{
+        color: #e1d6ff;
+    }
+
+    .row i{
+        margin-right: 20%;
+    }
+
+    .main_user{
+        width: 90%;
+    }
+
+    .informacoes{
+        flex-wrap: wrap;
+        align-content: center;
+        margin: -25% 0;
+    }
+
+    .info_space{
+        width: 40%;
+    } 
+
+    .formatacao{
+        border-top: 1.2px solid #1B0064;
+    }
+}
 

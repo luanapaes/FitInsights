@@ -1,34 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Lato&family=Montserrat:wght@400;700&family=Poppins:wght@700&family=Varela+Round&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
 }
 
 body {
-  background-color:#1B0064;
-  
+  height: 100%;
 }
 
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 100px;
+  height: 100%;
+  margin-top: 8%;
 }
 
 .card {
-  background-color: #ffffff80;
+  color: #fff;
+  background-color: #272262ed;
   padding: 30px;
   border-radius: 4%;
   box-shadow: 3px 3px 1px 0px #00000060
 }
 
+.font{
+  font-family: 'Lato';
+  color: #fff;
+}
+
+.font:nth-child(1){
+  color: #dfd8ff;
+}
+
+.font:nth-child(1):hover{
+  text-decoration: underline;
+  transition: all .6s ease;
+}
+
+.font:nth-child(3){
+  color: #dfd8ff;
+}
+
+.font:nth-child(3):hover{
+  text-decoration: underline;
+  transition: all .6s ease;
+}
+
 h1{
   text-align: center;
   margin-bottom: 20px;
-  color: #272262
+  color: #fff;
+  font-family: 'Montserrat';
 }
 
 .label-float input{
@@ -41,11 +66,7 @@ h1{
   min-width: 180px;
   font-size: 16px;
   transition: all .3s ease-out;
-  border-radius: 50px;
-}
-
-.label-float{
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .label-float{
@@ -53,6 +74,7 @@ h1{
   padding-top: 13px;
   margin-top: 5%;
   margin-bottom: 5%;
+  border-radius: 50%;
 }
 
 .label-float input:focus{
@@ -65,21 +87,23 @@ h1{
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 13px;
+  margin-top: 16px;
+  padding-left: 10px;
   transition: all .3s ease-out;
 }
 
 .label-float input:focus + label,
 .label-float input:valid + label{
   font-size: 13px;
-  margin-top: 0;
-  color: #4038a0
+  margin-top: -2%;
+  color: #ffffff
 }
 
 button{
+  font-family: 'Poppins';
   background-color: transparent;
-  border-color: #272262;
-  color: #272262;
+  border-color: #ffffff;
+  color: #ffffff;
   padding: 7px;
   font-weight: bold;
   font-size: 12pt;

@@ -1,12 +1,31 @@
+function redirecionar(input) {
+    // Verifica se um arquivo foi selecionado e se o tipo de arquivo é CSV
+    if (input.files.length > 0 && input.files[0].name.endsWith(".csv")) {
+        // Redireciona o usuário para a outra página
+        setTimeout(() => {
+            window.location.href = 'usuario.html'
+        }, 3000)
+
+    } else {
+        alert("Por favor, selecione um arquivo CSV.");
+    }
+}
+
+
+//--------------------------------------------------------
 let $btnLogin = document.getElementById('login');
-let $btnCadastro   = document.getElementById('cadastro');
+let $btnCadastro = document.getElementById('cadastro');
 let $btnSair = document.getElementById('btn-sair');
 
-$btnLogin.addEventListener('click', function(){
+$btnLogin.addEventListener('click', function () {
     window.location = 'signin.html';
 });
 
-function sair(){
+$btnCadastro.addEventListener('click', function () {
+    window.location = 'signup.html';
+});
+
+function sair() {
     window.location = 'signin.html';
 }
 
