@@ -21,8 +21,6 @@ attended = data_dict['attended']
 import pandas as pd
 import plotly.express as px
 
-# Carrega o dataframe
-df = pd.read_csv('data.csv')
 
 # Cria o gráfico de pizza
 fig = px.pie(df, names='time', values='attended', title='Distribuição de Atendimentos por Hora do Dia')

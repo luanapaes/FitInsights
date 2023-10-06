@@ -1,3 +1,5 @@
+#horário do dia da semana mais movimentado- nesse caso pela manhã vai mais pessoas
+
 #grafico de barras
 import pandas as pd
 
