@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="files/favicon.ico">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style/signup.css" />
-    <title>Cadastre-se</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="card">
-        <h1>Cadastrar</h1>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="files/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style/signup.css" />
+  <title>Cadastre-se</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Cadastrar</h1>
+
+      <form action="/files/bd/cadastro.php" method="post">
         <div id="msgError"></div>
         <div id="msgSuccess"></div>
 
@@ -38,24 +38,26 @@
 
         <div class="label-float">
           <input type="password" id="confirmSenha" placeholder=" " required />
-          <label id="labelConfirmSenha" for="confirmSenha"
-            >Confirmar Senha</label
-          >
+          <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
           <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
         </div>
+      </form>
 
-        <div class="justify-center">
-          <button onclick="cadastrar()">Cadastrar</button>
-        </div>
-        <br>
-        <p class="font">
-          Já tem conta?
-          <a href="./signin.html" class="font">
-            Faça Login
-          </a>
+
+
+      <div class="justify-center">
+        <button onclick="cadastrar()">Cadastrar</button>
       </div>
+      <br>
+      <p class="font">
+        Já tem conta?
+        <a href="./signin.html" class="font">
+          Faça Login
+        </a>
     </div>
+  </div>
 
-    <script src="js/signup.js"></script>
-  </body>
+  <script src="js/signup.js"></script>
+</body>
+
 </html>

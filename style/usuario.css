@@ -156,15 +156,24 @@ body {
 
 .graficos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 2%;
     margin-top: 2%;
     width: 100%;
 }
 
-img {
-    width: 100%;
+#dias-da-semana{
+    text-align: center;
+    color: #1B0064;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    height: 1.5em;
+    background-color: transparent;
+    margin: 1% 0;
+    text-decoration: dashed;
 }
+
 
 /*CHATBOT*/
 .chat-icon {
